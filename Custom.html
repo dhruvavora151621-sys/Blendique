@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="web_standard" name="shell-type" />
+  <title>BLENDIQUE Coffee Co.</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+
+      main> :first-child {
+        margin-top: 0 !important;
+      }
+
+      main> :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script
+<script id="tailwind-config">
+    tailwind.config={darkMode:"class",
+        theme:{extend:{"colors":{"outline-variant":"#d8c1bf",
+                    "on-secondary-container":"#3d657e",
+                    "secondary":"#3a637b",
+                    "on-error-container":"#93000a",
+                    "secondary-container":"#b9e2ff",
+                    "on-background":"#1b1b1d",
+                    "on-secondary":"#ffffff",
+                    "surface-container-high":"#eae7ea",
+                    "primary-container":"#71352f",
+                    "on-surface":"#1b1b1d",
+                    "on-tertiary-fixed":"#0d1d25",
+                    "inverse-primary":"#ffb4ab",
+                    "surface-bright":"#fcf8fb",
+                    "surface-container-lowest":"#ffffff",
+                    "on-primary-fixed":"#390b08",
+                    "on-surface-variant":"#534341",
+                    "on-error":"#ffffff",
+                    "surface-container":"#f0edef",
+                    "primary-fixed-dim":"#ffb4ab",
+                    "error":"#ba1a1a",
+                    "error-container":"#ffdad6",
+                    "surface-dim":"#dcd9dc",
+                    "surface":"#fcf8fb",
+                    "on-tertiary-fixed-variant":"#394952",
+                    "inverse-on-surface":"#f3f0f2",
+                    "surface-tint":"#8d4c45",
+                    "primary-fixed":"#ffdad6",
+                    "on-primary":"#ffffff",
+                    "outline":"#867370",
+                    "on-secondary-fixed-variant":"#204b62",
+                    "on-tertiary-container":"#a7b8c2",
+                    "on-primary-container":"#f3a096",
+                    "on-primary-fixed-variant":"#71352f",
+                    "secondary-fixed-dim":"#a3cce8",
+                    "tertiary-container":"#394952",
+                    "on-tertiary":"#ffffff",
+                    "tertiary-fixed":"#d4e5f0",
+                    "tertiary-fixed-dim":"#b8c9d4",
+                    "surface-container-highest":"#e4e2e4",
+                    "background":"#fcf8fb",
+                    "primary":"#551f1b",
+                    "tertiary":"#23333b",
+                    "surface-variant":"#e4e2e4",
+                    "surface-container-low":"#f6f3f5",
+                    "on-secondary-fixed":"#001e2d",
+                    "inverse-surface":"#303032",
+                    "secondary-fixed":"#c5e7ff"},
+                "borderRadius":{"DEFAULT":"1rem",
+                    "lg":"2rem",
+                    "xl":"3rem",
+                    "full":"9999px"},
+                "spacing":{"margin":"1.25rem",
+                    "space-lg":"1.5rem",
+                    "space-xl":"2.5rem",
+                    "space-2xl":"4rem",
+                    "gutter-desktop":"2rem",
+                    "gutter":"1.5rem",
+                    "margin-desktop":"3rem",
+                    "space-sm":"0.5rem",
+                    "space-xs":"0.25rem",
+                    "space-md":"1rem"},
+                "fontFamily":{"body-md":["Plus Jakarta Sans"],
+                    "body-sm":["Plus Jakarta Sans"],
+                    "display":["Syne"],
+                    "body-lg":["Plus Jakarta Sans"],
+                    "label-sticker":["Syne"],
+                    "headline-sm":["Syne"],
+                    "display-mobile":["Syne"],
+                    "headline-lg-mobile":["Syne"],
+                    "label-lg":["Plus Jakarta Sans"],
+                    "label-md":["Plus Jakarta Sans"],
+                    "headline-md":["Syne"],
+                    "headline-lg":["Syne"]},
+                "fontSize":{"body-md":["1rem",
+                        {"lineHeight":"1.5rem",
+                            "fontWeight":"400"}],
+                    "body-sm":["0.875rem",
+                        {"lineHeight":"1.35rem",
+                            "fontWeight":"400"}],
+                    "display":["4.5rem",
+                        {"lineHeight":"4.75rem",
+                            "letterSpacing":"-0.03em",
+                            "fontWeight":"800"}],
+                    "body-lg":["1.125rem",
+                        {"lineHeight":"1.75rem",
+                            "fontWeight":"400"}],
+                    "label-sticker":["0.75rem",
+                        {"lineHeight":"0.875rem","letterSpacing":"0.08em","fontWeight":"800"}],"headline-sm":["1.375rem",{"lineHeight":"1.75rem","fontWeight":"700"}],"display-mobile":["2.75rem",{"lineHeight":"3rem","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-lg-mobile":["2rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.04em","fontWeight":"700"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.06em","fontWeight":"700"}],"headline-md":["2rem",{"lineHeight":"2.35rem","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["3rem",{"lineHeight":"3.25rem","letterSpacing":"-0.02em","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"> 
+</head>
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased">
+    <div id="shared-header"></div>
+  <main class="w-full pt-20 bg-background">
+    <div class="flex flex-col w-full">
+      <!-- Top Subtle Context Bar -->
+      <section class="w-full bg-surface-container-low py-space-sm px-6 lg:px-12 border-b-0 shadow-sm">
+        <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm">
+          <div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+            <span class="inline-block w-2 h-2 rounded-full bg-secondary"></span>
+            <span class="font-headline-sm text-headline-sm text-primary tracking-wide">ATELIER LAB</span>
+          </div>
+          <div class="flex items-center gap-space-md">
+            <button
+              class="font-label-md text-label-md text-primary hover:text-primary-container transition-colors flex items-center gap-1"
+              id="reset-builder-btn">
+              <span class="material-symbols-outlined text-[16px]">restart_alt</span> Reset to Default
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Main Customizer Experience: 2-Column Split Workspace -->
+      <div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-lg w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+          <!-- LEFT COLUMN: Sticky Dynamic Visual Stage & Order Receipt (5 Columns) -->
+          <div class="lg:col-span-5 lg:sticky lg:top-24 flex flex-col gap-space-md">
+            <!-- Live Cost Receipt & Add to Cart -->
+            <div
+              class="bg-surface-container-lowest rounded-xl p-space-md shadow-[0_8px_24px_-4px_rgba(113,53,47,0.08)]">
+              <div class="flex items-center justify-between pb-space-xs">
+                <span class="font-headline-sm text-headline-sm text-on-surface">Calculated Tally</span>
+                <span
+                  class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed uppercase font-bold">Tasting
+                  Order</span>
+              </div>
+              <!-- Dynamic Itemized Breakdown -->
+              <div class="flex flex-col gap-1.5 py-space-xs text-body-sm text-on-surface-variant" id="itemized-summary">
+                <div class="flex justify-between">
+                  <span>Base Brew (Grande Espresso)</span>
+                  <span class="font-mono text-on-surface" id="price-base">₹260</span>
+                </div>
+                <div class="flex justify-between" id="summary-milk-row">
+                  <span>Barista Oat Milk</span>
+                  <span class="font-mono text-on-surface" id="price-milk">+₹45</span>
+                </div>
+                <div class="flex justify-between hidden" id="summary-syrup-row">
+                  <span id="summary-syrup-label">Vanilla Syrup</span>
+                  <span class="font-mono text-on-surface" id="price-syrup">+₹30</span>
+                </div>
+                <div class="flex justify-between hidden" id="summary-shots-row">
+                  <span>Extra Shot (Triple)</span>
+                  <span class="font-mono text-on-surface" id="price-shots">+₹40</span>
+                </div>
+                <div class="flex justify-between hidden" id="summary-addons-row">
+                  <span id="summary-addons-label">Artisanal Addon</span>
+                  <span class="font-mono text-on-surface" id="price-addons">+₹35</span>
+                </div>
+              </div>
+              <!-- Total & Primary CTA -->
+              <div
+                class="pt-space-sm mt-space-xs bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-sm">
+                <div class="flex items-baseline justify-between">
+                  <span class="font-label-lg text-label-lg text-on-surface uppercase tracking-wide">Total Beverage
+                    Price</span>
+                  <div class="flex items-baseline gap-1">
+                    <span class="font-display-md text-display-md text-primary" id="total-price-display">₹305</span>
+                    <span class="font-label-sm text-label-sm text-outline">incl. taxes</span>
+                  </div>
+                </div>
+                <button
+                  class="w-full py-space-sm rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_8px_24px_-4px_rgba(113,53,47,0.22)] active:scale-[0.98] transition-all flex items-center justify-center gap-space-xs"
+                  id="add-to-cart-btn">
+                  <span class="material-symbols-outlined text-[20px]">coffee</span>
+                  <span id="cta-button-text">Save Customization • ₹305</span>
+                </button>
+                <p class="font-body-sm text-body-sm text-outline text-center">Handcrafted in under 4 minutes at our
+                  Atelier Counter.</p>
+              </div>
+            </div>
+          </div>
+          <!-- RIGHT COLUMN: Interactive Step-by-Step Sculptor Controls (7 Columns) -->
+          <div class="lg:col-span-7 flex flex-col gap-space-md">
+            <!-- STEP 1: BASE BREW SELECTION -->
+            <div
+              class="bg-surface-container-lowest rounded-xl p-space-lg shadow-[0_8px_24px_-4px_rgba(113,53,47,0.08)] flex flex-col gap-space-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span
+                    class="w-7 h-7 rounded-full bg-primary text-on-primary font-headline-sm text-[13px] flex items-center justify-center font-bold">1</span>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Base Brew &amp; Terroir Roast</h3>
+                </div>
+                <span
+                  class="inline-flex items-center gap-1 font-label-sm text-label-sm uppercase tracking-wide px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-bold rotate-1">
+                  Direct Trade Single Origin
+                </span>
+              </div>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-space-xs" id="roast-options-group">
+                <!-- Option 1: Signature Blend -->
+                <button
+                  class="roast-card text-left p-space-sm rounded-lg bg-surface-container transition-all relative overflow-hidden group active-step-card ring-2 ring-primary"
+                  data-color="#551F1B" data-intensity="75" data-roast="signature" type="button">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-headline-sm text-[16px] text-primary">Signature Atelier</span>
+                    <span class="w-3.5 h-3.5 rounded-full bg-primary flex items-center justify-center checkmark">
+                      <span class="material-symbols-outlined text-[12px] text-on-primary">check</span>
+                    </span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Chikmagalur &amp; Colombia washed
+                    beans.</p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-[10px]">Dark
+                      Chocolate</span>
+                    <span
+                      class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-[10px]">Nutty</span>
+                  </div>
+                </button>
+                <!-- Option 2: Ethiopian Light Floral -->
+                <button
+                  class="roast-card text-left p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all relative overflow-hidden group"
+                  data-color="#8D4C45" data-intensity="50" data-roast="ethiopian" type="button">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-headline-sm text-[16px] text-on-surface">Yirgacheffe Floral</span>
+                    <span
+                      class="w-3.5 h-3.5 rounded-full bg-outline/30 flex items-center justify-center checkmark hidden">
+                      <span class="material-symbols-outlined text-[12px] text-on-primary">check</span>
+                    </span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Light sun-dried heirloom roast.</p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-[10px]">Jasmine</span>
+                    <span
+                      class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-[10px]">Peach</span>
+                  </div>
+                </button>
+                <!-- Option 3: Dark Sumatra -->
+                <button
+                  class="roast-card text-left p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all relative overflow-hidden group"
+                  data-color="#28110F" data-intensity="95" data-roast="sumatra" type="button">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-headline-sm text-[16px] text-on-surface">Dark Sumatra</span>
+                    <span
+                      class="w-3.5 h-3.5 rounded-full bg-outline/30 flex items-center justify-center checkmark hidden">
+                      <span class="material-symbols-outlined text-[12px] text-on-primary">check</span>
+                    </span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant mb-2">Heavy body, slow drum roasted.</p>
+                  <div class="flex flex-wrap gap-1">
+                    <span
+                      class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-[10px]">Smoky</span>
+                    <span
+                      class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-[10px]">Earthy</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <!-- STEP 2: CUP SIZE & TEMPERATURE -->
+            <div
+              class="bg-surface-container-lowest rounded-xl p-space-lg shadow-[0_8px_24px_-4px_rgba(113,53,47,0.08)] flex flex-col gap-space-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span
+                    class="w-7 h-7 rounded-full bg-primary text-on-primary font-headline-sm text-[13px] flex items-center justify-center font-bold">2</span>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Vessel Volume &amp; Thermals</h3>
+                </div>
+                <!-- Hot / Iced Toggle Pill -->
+                <div class="flex bg-surface-container rounded-full p-1 gap-1">
+                  <button
+                    class="px-space-sm py-1 rounded-full bg-primary text-on-primary font-label-md text-label-md transition-all shadow-sm flex items-center gap-1"
+                    id="toggle-hot" type="button">
+                    <span class="material-symbols-outlined text-[16px]">local_fire_department</span> Hot
+                  </button>
+                  <button
+                    class="px-space-sm py-1 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all flex items-center gap-1"
+                    id="toggle-iced" type="button">
+                    <span class="material-symbols-outlined text-[16px]">ac_unit</span> Iced
+                  </button>
+                </div>
+              </div>
+              <!-- Dynamic Ice Sub-Slider (Revealed only when Iced) -->
+              <div class="hidden bg-secondary-container/40 p-space-sm rounded-lg flex flex-col gap-2"
+                id="ice-slider-panel">
+                <div class="flex items-center justify-between">
+                  <span class="font-label-md text-label-md text-secondary font-bold">Chill &amp; Ice Calibration</span>
+                  <span class="font-label-sm text-label-sm text-on-secondary-fixed font-bold uppercase"
+                    id="ice-level-label">Standard Cold (100g Ice)</span>
+                </div>
+                <div class="grid grid-cols-3 gap-space-xs">
+                  <button
+                    class="ice-btn py-1.5 px-2 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm hover:bg-secondary-fixed transition-colors"
+                    data-ice="light" type="button">Less Ice</button>
+                  <button
+                    class="ice-btn py-1.5 px-2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm transition-colors"
+                    data-ice="regular" type="button">Standard Chill</button>
+                  <button
+                    class="ice-btn py-1.5 px-2 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm hover:bg-secondary-fixed transition-colors"
+                    data-ice="extra" type="button">Extra Cold (Glacier)</button>
+                </div>
+              </div>
+              <!-- Size Selection Trio -->
+              <div class="grid grid-cols-3 gap-space-xs" id="size-options-group">
+                <!-- Tall -->
+                <button
+                  class="size-card p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col items-center text-center group"
+                  data-h="180" data-price="220" data-size="tall" data-vol="250ml" type="button">
+                  <div class="w-8 h-10 rounded-b-md bg-secondary-fixed-dim/60 mb-2 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-secondary text-[20px]">local_cafe</span>
+                  </div>
+                  <span class="font-headline-sm text-[16px] text-on-surface">Regular</span>
+                  <span class="font-label-sm text-label-sm text-outline">Tall • 250ml</span>
+                  <span class="font-mono text-label-md text-primary mt-1 font-bold">₹220</span>
+                </button>
+                <!-- Grande (Default) -->
+                <button
+                  class="size-card p-space-sm rounded-lg bg-surface-container transition-all flex flex-col items-center text-center relative group ring-2 ring-primary"
+                  data-h="220" data-price="260" data-size="grande" data-vol="350ml" type="button">
+                  <div
+                    class="absolute -top-2.5 bg-primary text-on-primary font-label-sm text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wider font-bold">
+                    Golden Ratio
+                  </div>
+                  <div
+                    class="w-10 h-12 rounded-b-md bg-secondary mb-2 flex items-center justify-center text-on-secondary">
+                    <span class="material-symbols-outlined text-[24px]">coffee</span>
+                  </div>
+                  <span class="font-headline-sm text-[16px] text-primary">Large</span>
+                  <span class="font-label-sm text-label-sm text-outline">Grande • 350ml</span>
+                  <span class="font-mono text-label-md text-primary mt-1 font-bold">₹260 (+₹40)</span>
+                </button>
+                <!-- Venti -->
+                <button
+                  class="size-card p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container transition-all flex flex-col items-center text-center group"
+                  data-h="250" data-price="290" data-size="venti" data-vol="450ml" type="button">
+                  <div class="w-12 h-14 rounded-b-lg bg-secondary-fixed-dim/60 mb-2 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-secondary text-[28px]">coffee</span>
+                  </div>
+                  <span class="font-headline-sm text-[16px] text-on-surface">Jumbo</span>
+                  <span class="font-label-sm text-label-sm text-outline">Venti • 450ml</span>
+                  <span class="font-mono text-label-md text-primary mt-1 font-bold">₹290 (+₹70)</span>
+                </button>
+              </div>
+            </div>
+            <!-- STEP 3: MILK & DAIRY ALTERNATIVES -->
+            <div
+              class="bg-surface-container-lowest rounded-xl p-space-lg shadow-[0_8px_24px_-4px_rgba(113,53,47,0.08)] flex flex-col gap-space-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span
+                    class="w-7 h-7 rounded-full bg-primary text-on-primary font-headline-sm text-[13px] flex items-center justify-center font-bold">3</span>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Milk &amp; Plant Alternatives</h3>
+                </div>
+                <span class="font-body-sm text-body-sm text-on-surface-variant">Steamed to silky microfoam</span>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-space-xs" id="milk-options-group">
+                <!-- Oat (Default) -->
+                <button
+                  class="milk-card p-space-sm rounded-lg bg-surface-container ring-2 ring-primary text-left transition-all relative"
+                  data-color="#EDE2D3" data-milk="Barista Oat" data-price="45" type="button">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-label-lg text-label-lg text-primary">Barista Oat Milk</span>
+                    <span class="font-mono text-label-sm text-primary font-bold">+₹45</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-outline leading-tight">Velvety &amp; naturally sweet grain
+                    finish.</p>
+                  <div class="mt-2 inline-flex items-center gap-1 font-label-sm text-[10px] text-secondary font-bold">
+                    <span class="material-symbols-outlined text-[12px]">verified</span> Barista's Choice
+                  </div>
+                </button>
+                <!-- Whole -->
+                <button
+                  class="milk-card p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-all"
+                  data-color="#FFFDF9" data-milk="Whole Milk" data-price="0" type="button">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-label-lg text-label-lg text-on-surface">Whole Dairy Milk</span>
+                    <span class="font-mono text-label-sm text-outline">Included</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-outline leading-tight">Rich, decadent organic pasteurized
+                    dairy.</p>
+                </button>
+                <!-- Skimmed -->
+                <button
+                  class="milk-card p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-all"
+                  data-color="#F4F4F6" data-milk="Skimmed Milk" data-price="0" type="button">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-label-lg text-label-lg text-on-surface">Skimmed Light</span>
+                    <span class="font-mono text-label-sm text-outline">Included</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-outline leading-tight">Crisp texture, low calorie brew body.
+                  </p>
+                </button>
+                <!-- Almond -->
+                <button
+                  class="milk-card p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-all"
+                  data-color="#EBE3D7" data-milk="Creamy Almond" data-price="45" type="button">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-label-lg text-label-lg text-on-surface">Creamy Almond</span>
+                    <span class="font-mono text-label-sm text-primary font-bold">+₹45</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-outline leading-tight">Subtle roasted almond note, zero cane
+                    sugar.</p>
+                </button>
+                <!-- Coconut -->
+                <button
+                  class="milk-card p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-all"
+                  data-color="#FAF8F5" data-milk="Coconut Milk" data-price="40" type="button">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-label-lg text-label-lg text-on-surface">Tropical Coconut</span>
+                    <span class="font-mono text-label-sm text-primary font-bold">+₹40</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-outline leading-tight">Silky creaminess with exotic botanical
+                    lift.</p>
+                </button>
+                <!-- Black / No Milk -->
+                <button
+                  class="milk-card p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-left transition-all"
+                  data-color="transparent" data-milk="No Milk (Black)" data-price="0" type="button">
+                  <div class="flex items-center justify-between mb-1">
+                    <span class="font-label-lg text-label-lg text-on-surface">Pure Black</span>
+                    <span class="font-mono text-label-sm text-outline">No Milk</span>
+                  </div>
+                  <p class="font-body-sm text-body-sm text-outline leading-tight">Pure espresso with hot or iced
+                    filtered water.</p>
+                </button>
+              </div>
+            </div>
+            <!-- STEP 5: COFFEE STRENGTH (EXTRA SHOTS) -->
+            <div
+              class="bg-surface-container-lowest rounded-xl p-space-lg shadow-[0_8px_24px_-4px_rgba(113,53,47,0.08)] flex flex-col gap-space-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span
+                    class="w-7 h-7 rounded-full bg-primary text-on-primary font-headline-sm text-[13px] flex items-center justify-center font-bold">5</span>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Caffeine Dosage &amp; Extraction</h3>
+                </div>
+                <span class="font-label-sm text-label-sm text-on-surface-variant font-mono">9-Bar Pressure</span>
+              </div>
+              <div class="grid grid-cols-3 gap-space-xs" id="shot-options-group">
+                <button
+                  class="shot-card p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-center transition-all"
+                  data-label="Single (1x)" data-price="0" data-shots="1" type="button">
+                  <span class="material-symbols-outlined text-secondary text-[22px] mb-1">water_drop</span>
+                  <span class="font-label-lg text-label-lg block text-on-surface">Single Shot</span>
+                  <span class="font-body-sm text-body-sm text-outline">30ml Espresso</span>
+                  <span class="font-mono text-label-sm text-outline block mt-1">Included</span>
+                </button>
+                <button
+                  class="shot-card p-space-sm rounded-lg bg-surface-container ring-2 ring-primary text-center transition-all"
+                  data-label="Double (2x)" data-price="0" data-shots="2" type="button">
+                  <div class="flex justify-center text-primary mb-1">
+                    <span class="material-symbols-outlined text-[22px]">water_drop</span>
+                    <span class="material-symbols-outlined text-[22px] -ml-2">water_drop</span>
+                  </div>
+                  <span class="font-label-lg text-label-lg block text-primary font-bold">Double Shot</span>
+                  <span class="font-body-sm text-body-sm text-outline">60ml Extraction</span>
+                  <span class="font-mono text-label-sm text-primary block mt-1 font-bold">Atelier Standard</span>
+                </button>
+                <button
+                  class="shot-card p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-center transition-all"
+                  data-label="Triple (3x)" data-price="40" data-shots="3" type="button">
+                  <div class="flex justify-center text-secondary mb-1">
+                    <span class="material-symbols-outlined text-[22px]">water_drop</span>
+                    <span class="material-symbols-outlined text-[22px] -ml-2">water_drop</span>
+                    <span class="material-symbols-outlined text-[22px] -ml-2">water_drop</span>
+                  </div>
+                  <span class="font-label-lg text-label-lg block text-on-surface">Triple Shot</span>
+                  <span class="font-body-sm text-body-sm text-outline">90ml Pure Fuel</span>
+                  <span class="font-mono text-label-sm text-primary block mt-1 font-bold">+₹40</span>
+                </button>
+              </div>
+            </div>
+            <!-- STEP 6: ARTISANAL ADD-ONS -->
+            <div
+              class="bg-surface-container-lowest rounded-xl p-space-lg shadow-[0_8px_24px_-4px_rgba(113,53,47,0.08)] flex flex-col gap-space-md">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-space-xs">
+                  <span
+                    class="w-7 h-7 rounded-full bg-primary text-on-primary font-headline-sm text-[13px] flex items-center justify-center font-bold">6</span>
+                  <h3 class="font-headline-sm text-headline-sm text-primary">Artisanal Finishes &amp; Texture Toppers
+                  </h3>
+                </div>
+                <span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Culinary
+                  Garnish</span>
+              </div>
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-space-xs" id="addons-options-group">
+                <!-- Whipped Cream -->
+                <button
+                  class="addon-card p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-center transition-all flex flex-col items-center"
+                  data-addon="whip" data-h="14" data-name="Whipped Cream" data-price="35" type="button">
+                  <span class="material-symbols-outlined text-secondary mb-1 text-[22px]">cloud</span>
+                  <span class="font-label-md text-label-md text-on-surface">Whipped Cream</span>
+                  <span class="font-mono text-label-sm text-primary font-bold mt-1">+₹35</span>
+                </button>
+                <!-- Cold Foam -->
+                <button
+                  class="addon-card p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-center transition-all flex flex-col items-center"
+                  data-addon="cold-foam" data-h="16" data-name="Velvet Cold Foam" data-price="35" type="button">
+                  <span class="material-symbols-outlined text-secondary mb-1 text-[22px]">bubble_chart</span>
+                  <span class="font-label-md text-label-md text-on-surface">Vanilla Cold Foam</span>
+                  <span class="font-mono text-label-sm text-primary font-bold mt-1">+₹35</span>
+                </button>
+                <!-- Cinnamon Dusting -->
+                <button
+                  class="addon-card p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-center transition-all flex flex-col items-center"
+                  data-addon="cinnamon-dust" data-h="6" data-name="Cinnamon Dust" data-price="20" type="button">
+                  <span class="material-symbols-outlined text-secondary mb-1 text-[22px]">grain</span>
+                  <span class="font-label-md text-label-md text-on-surface">Cinnamon Dust</span>
+                  <span class="font-mono text-label-sm text-primary font-bold mt-1">+₹20</span>
+                </button>
+                <!-- Cocoa Nib Crumble -->
+                <button
+                  class="addon-card p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container text-center transition-all flex flex-col items-center"
+                  data-addon="cocoa-nib" data-h="8" data-name="Cocoa Nibs" data-price="25" type="button">
+                  <span class="material-symbols-outlined text-secondary mb-1 text-[22px]">auto_fix_high</span>
+                  <span class="font-label-md text-label-md text-on-surface">Cocoa Nib Crunch</span>
+                  <span class="font-mono text-label-sm text-primary font-bold mt-1">+₹25</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Interactive JavaScript State Engine -->
+      <script>
+        (function initCustomizer() {
+          // Current Formulation State
+          const state = {
+            roast: { id: 'signature', name: 'Signature Atelier', color: '#551F1B', intensity: 75 },
+            isHot: true,
+            iceLevel: 'regular',
+            size: { id: 'grande', name: 'Large', vol: '350ml', price: 260, heightMultiplier: 220 },
+            milk: { name: 'Barista Oat Milk', color: '#EDE2D3', price: 45 },
+            shots: { count: 2, label: 'Double (2x)', price: 0 },
+            addon: null // { id: 'whip', name: 'Whipped Cream', price: 35, h: 14 }
+          };
+          
+
+          // Element References
+          const cupTitle = document.getElementById('cup-title');
+          const cupSubtitle = document.getElementById('cup-subtitle');
+          const tempBadge = document.getElementById('temp-badge');
+          const iceOverlay = document.getElementById('ice-cubes-overlay');
+          const steamContainer = document.getElementById('steam-container');
+          const iceSliderPanel = document.getElementById('ice-slider-panel');
+          const visualSizePill = document.getElementById('visual-size-pill');
+          const cupScalingWrapper = document.getElementById('cup-scaling-wrapper');
+          const volIndicator = document.getElementById('vol-indicator');
+
+          // Fluid Layer Elements
+          const layerEspresso = document.getElementById('layer-espresso');
+          const layerEspressoText = document.getElementById('layer-espresso-text');
+          const layerMilk = document.getElementById('layer-milk');
+          const layerMilkText = document.getElementById('layer-milk-text');
+          const layerSyrup = document.getElementById('layer-syrup');
+          const layerSyrupText = document.getElementById('layer-syrup-text');
+          const layerTopping = document.getElementById('layer-topping');
+          const layerToppingText = document.getElementById('layer-topping-text');
+
+          // Flavor Matrix Elements
+          const barIntensity = document.getElementById('bar-intensity');
+          const barSweetness = document.getElementById('bar-sweetness');
+          const matrixCalories = document.getElementById('matrix-calories');
+
+          // Receipt Elements
+          const priceBase = document.getElementById('price-base');
+          const priceMilk = document.getElementById('price-milk');
+          const summaryMilkRow = document.getElementById('summary-milk-row');
+          const priceShots = document.getElementById('price-shots');
+          const summaryShotsRow = document.getElementById('summary-shots-row');
+          const priceAddons = document.getElementById('price-addons');
+          const summaryAddonsRow = document.getElementById('summary-addons-row');
+          const summaryAddonsLabel = document.getElementById('summary-addons-label');
+          const totalPriceDisplay = document.getElementById('total-price-display');
+          const ctaButtonText = document.getElementById('cta-button-text');
+
+          // Calculation & Render Logic
+          function renderCup() {
+            // Price Calculation
+            const total = state.size.price + state.milk.price + state.shots.price + (state.addon ? state.addon.price : 0);
+            // Update Displays
+            totalPriceDisplay.textContent = '₹' + total;
+            ctaButtonText.textContent = 'Save Customization • ₹' + total;
+            priceBase.textContent = '₹' + state.size.price;
+
+            // Subtitle & Header
+            cupSubtitle.textContent = `${state.isHot ? 'Hot' : 'Iced'} ${state.roast.name} • ${state.shots.label} • ${state.milk.name}`;
+
+            // Dynamic Receipt Rows
+            if (state.milk.price > 0) {
+              summaryMilkRow.classList.remove('hidden');
+              summaryMilkRow.children[0].textContent = state.milk.name;
+              priceMilk.textContent = '+₹' + state.milk.price;
+            } else {
+              summaryMilkRow.classList.remove('hidden');
+              summaryMilkRow.children[0].textContent = state.milk.name;
+              priceMilk.textContent = 'Included';
+            }
+
+
+            if (state.shots.price > 0) {
+              summaryShotsRow.classList.remove('hidden');
+              priceShots.textContent = '+₹' + state.shots.price;
+            } else {
+              summaryShotsRow.classList.add('hidden');
+            }
+
+            if (state.addon) {
+              summaryAddonsRow.classList.remove('hidden');
+              summaryAddonsLabel.textContent = state.addon.name;
+              priceAddons.textContent = '+₹' + state.addon.price;
+            } else {
+              summaryAddonsRow.classList.add('hidden');
+            }
+
+            // Thermals
+            if (state.isHot) {
+              tempBadge.innerHTML = '<span class="material-symbols-outlined text-[16px]">local_fire_department</span> Hot Brew';
+              tempBadge.className = 'inline-flex items-center gap-1 px-3 py-1 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm';
+              steamContainer.classList.remove('hidden');
+              iceOverlay.classList.add('hidden');
+            } else {
+              tempBadge.innerHTML = '<span class="material-symbols-outlined text-[16px]">ac_unit</span> ' + (state.iceLevel === 'light' ? 'Light Ice' : state.iceLevel === 'extra' ? 'Glacier Cold' : 'Iced Brew');
+              tempBadge.className = 'inline-flex items-center gap-1 px-3 py-1 rounded-full bg-secondary text-on-secondary font-label-md text-label-md shadow-sm';
+              steamContainer.classList.add('hidden');
+              iceOverlay.classList.remove('hidden');
+            }
+
+            // Cup Physical Geometry
+            visualSizePill.textContent = `${state.size.name} (${state.size.vol})`;
+            volIndicator.textContent = state.size.vol;
+            cupScalingWrapper.style.height = state.size.heightMultiplier + 'px';
+
+            // Fluid Heights & Visual Styling
+            layerEspresso.style.backgroundColor = state.roast.color;
+            const espressoHeight = state.shots.count === 1 ? '38px' : state.shots.count === 2 ? '54px' : '72px';
+            layerEspresso.style.height = espressoHeight;
+            layerEspressoText.textContent = state.shots.label + ' Extraction';
+
+            // Milk Layer
+            if (state.milk.name.includes('No Milk')) {
+              layerMilk.style.backgroundColor = '#381C19';
+              layerMilkText.textContent = 'Americano Water / Long Black';
+              layerMilkText.style.color = '#FFFFFF';
+            } else {
+              layerMilk.style.backgroundColor = state.milk.color;
+              layerMilkText.textContent = state.milk.name;
+              layerMilkText.style.color = '#534341';
+            }
+
+            // Syrup layer disabled
+            layerSyrup.style.height = '0px';
+            layerSyrupText.style.opacity = '0';
+
+            // Topping Add-on Layer
+            if (state.addon) {
+              layerTopping.style.height = state.addon.h + 'px';
+              layerToppingText.textContent = state.addon.name;
+              layerToppingText.style.opacity = '1';
+            } else {
+              layerTopping.style.height = '0px';
+              layerToppingText.style.opacity = '0';
+            }
+
+            // Matrix bars & estimation
+            const baseKcal = state.milk.name.includes('Oat') ? 130 : state.milk.name.includes('Almond') ? 60 : state.milk.name.includes('No Milk') ? 15 : 150;
+            const addonKcal = state.addon ? 40 : 0;
+            matrixCalories.textContent = `~${Math.round(baseKcal + addonKcal)} kcal`;
+            // Intensity calculation
+            const intensityVal = Math.min(100, Math.round((state.roast.intensity * 0.6) + (state.shots.count * 15)));
+            barIntensity.style.width = intensityVal + '%';
+
+            // Sweetness indicator disabled
+            barSweetness.style.width = '0%';
+          }
+
+          // 1. Roast Options
+          const roastCards = document.querySelectorAll('.roast-card');
+          roastCards.forEach(card => {
+            card.addEventListener('click', () => {
+              roastCards.forEach(c => {
+                c.classList.remove('ring-2', 'ring-primary', 'bg-surface-container');
+                c.classList.add('bg-surface-container-low');
+                c.querySelector('.checkmark')?.classList.add('hidden');
+              });
+              card.classList.add('ring-2', 'ring-primary', 'bg-surface-container');
+              card.classList.remove('bg-surface-container-low');
+              card.querySelector('.checkmark')?.classList.remove('hidden');
+
+              state.roast = {
+                id: card.getAttribute('data-roast'),
+                name: card.querySelector('.font-headline-sm').textContent,
+                color: card.getAttribute('data-color'),
+                intensity: parseInt(card.getAttribute('data-intensity'), 10)
+              };
+              renderCup();
+            });
+          });
+
+          // 2. Temperature & Ice
+          const toggleHot = document.getElementById('toggle-hot');
+          const toggleIced = document.getElementById('toggle-iced');
+          toggleHot.addEventListener('click', () => {
+            state.isHot = true;
+            toggleHot.className = 'px-space-sm py-1 rounded-full bg-primary text-on-primary font-label-md text-label-md transition-all shadow-sm flex items-center gap-1';
+            toggleIced.className = 'px-space-sm py-1 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all flex items-center gap-1';
+            iceSliderPanel.classList.add('hidden');
+            renderCup();
+          });
+
+          toggleIced.addEventListener('click', () => {
+            state.isHot = false;
+            toggleIced.className = 'px-space-sm py-1 rounded-full bg-secondary text-on-secondary font-label-md text-label-md transition-all shadow-sm flex items-center gap-1';
+            toggleHot.className = 'px-space-sm py-1 rounded-full text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all flex items-center gap-1';
+            iceSliderPanel.classList.remove('hidden');
+            renderCup();
+          });
+
+          const iceButtons = document.querySelectorAll('.ice-btn');
+          iceButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+              iceButtons.forEach(b => {
+                b.className = 'ice-btn py-1.5 px-2 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm hover:bg-secondary-fixed transition-colors';
+              });
+              btn.className = 'ice-btn py-1.5 px-2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm transition-colors';
+              state.iceLevel = btn.getAttribute('data-ice');
+              document.getElementById('ice-level-label').textContent = btn.textContent;
+              renderCup();
+            });
+          });
+
+          // Size Options
+          const sizeCards = document.querySelectorAll('.size-card');
+          sizeCards.forEach(card => {
+            card.addEventListener('click', () => {
+              sizeCards.forEach(c => {
+                c.classList.remove('ring-2', 'ring-primary', 'bg-surface-container');
+                c.classList.add('bg-surface-container-low');
+              });
+              card.classList.add('ring-2', 'ring-primary', 'bg-surface-container');
+              card.classList.remove('bg-surface-container-low');
+
+              state.size = {
+                id: card.getAttribute('data-size'),
+                name: card.querySelector('.font-headline-sm').textContent,
+                vol: card.getAttribute('data-vol'),
+                price: parseInt(card.getAttribute('data-price'), 10),
+                heightMultiplier: parseInt(card.getAttribute('data-h'), 10)
+              };
+              renderCup();
+            });
+          });
+
+          // 3. Milk Options
+          const milkCards = document.querySelectorAll('.milk-card');
+          milkCards.forEach(card => {
+            card.addEventListener('click', () => {
+              milkCards.forEach(c => {
+                c.classList.remove('ring-2', 'ring-primary', 'bg-surface-container');
+                c.classList.add('bg-surface-container-low');
+              });
+              card.classList.add('ring-2', 'ring-primary', 'bg-surface-container');
+              card.classList.remove('bg-surface-container-low');
+
+              state.milk = {
+                name: card.getAttribute('data-milk'),
+                color: card.getAttribute('data-color'),
+                price: parseInt(card.getAttribute('data-price'), 10)
+              };
+              renderCup();
+            });
+          });
+           
+          // 5. Shot Extraction
+          const shotCards = document.querySelectorAll('.shot-card');
+          shotCards.forEach(card => {
+            card.addEventListener('click', () => {
+              shotCards.forEach(c => {
+                c.classList.remove('ring-2', 'ring-primary', 'bg-surface-container');
+                c.classList.add('bg-surface-container-low');
+              });
+              card.classList.add('ring-2', 'ring-primary', 'bg-surface-container');
+              card.classList.remove('bg-surface-container-low');
+
+              state.shots = {
+                count: parseInt(card.getAttribute('data-shots'), 10),
+                label: card.getAttribute('data-label'),
+                price: parseInt(card.getAttribute('data-price'), 10)
+              };
+              renderCup();
+            });
+          });
+
+          // 6. Addon Finishes
+          const addonCards = document.querySelectorAll('.addon-card');
+          addonCards.forEach(card => {
+            card.addEventListener('click', () => {
+              const addonId = card.getAttribute('data-addon');
+              if (state.addon && state.addon.id === addonId) {
+                // Deselect
+                state.addon = null;
+                card.classList.remove('ring-2', 'ring-primary', 'bg-surface-container');
+                card.classList.add('bg-surface-container-low');
+              } else {
+                addonCards.forEach(c => {
+                  c.classList.remove('ring-2', 'ring-primary', 'bg-surface-container');
+                  c.classList.add('bg-surface-container-low');
+                });
+                card.classList.add('ring-2', 'ring-primary', 'bg-surface-container');
+                card.classList.remove('bg-surface-container-low');
+
+                state.addon = {
+                  id: addonId,
+                  name: card.getAttribute('data-name'),
+                  price: parseInt(card.getAttribute('data-price'), 10),
+                  h: parseInt(card.getAttribute('data-h'), 10)
+                };
+              }
+              renderCup();
+            });
+          });
+
+          // Load Barista Formulation
+          const baristaBtn = document.getElementById('apply-barista-rec-btn');
+          if (baristaBtn) {
+            baristaBtn.addEventListener('click', () => {
+              // Select Ethiopian
+              document.querySelector('[data-roast="ethiopian"]')?.click();
+              // Select Barista Oat
+              document.querySelector('[data-milk="Barista Oat"]')?.click();
+              // Smooth scroll to top of preview
+              window.scrollTo({ top: 120, behavior: 'smooth' });
+            });
+          }
+
+          // Reset Builder
+          const resetBtn = document.getElementById('reset-builder-btn');
+          if (resetBtn) {
+            resetBtn.addEventListener('click', () => {
+              document.querySelector('[data-roast="signature"]')?.click();
+              document.querySelector('[data-size="grande"]')?.click();
+              document.querySelector('[data-milk="Barista Oat"]')?.click();
+              document.querySelector('[data-shots="2"]')?.click();
+              toggleHot.click();
+              if (state.addon) {
+                document.querySelector(`[data-addon="${state.addon.id}"]`)?.click();
+              }
+            });
+          }
+
+          
+// Save Customization to MySQL using Java Servlet
+
+const saveButton = document.getElementById('add-to-cart-btn');
+
+saveButton.addEventListener('click', async function () {
+
+    const originalText = ctaButtonText.textContent;
+
+    saveButton.disabled = true;
+    ctaButtonText.textContent = 'Saving Customization...';
+
+    const formData = new URLSearchParams();
+
+    formData.append('roast', state.roast.id);
+    formData.append('size', state.size.id);
+    formData.append('temperature', state.isHot ? 'hot' : 'iced');
+    formData.append('ice', state.isHot ? '' : state.iceLevel);
+
+    // Convert the displayed milk name to the exact database option code
+    const selectedMilk = document.querySelector(
+        '.milk-card.ring-2'
+    );
+
+    formData.append(
+        'milk',
+        selectedMilk.getAttribute('data-milk')
+    );
+
+    formData.append('shots', String(state.shots.count));
+
+    formData.append(
+        'addon',
+        state.addon ? state.addon.id : ''
+    );
+
+    try {
+
+        const response = await fetch(
+            new URL('saveCustomization', window.location.href),
+            {
+                method: 'POST',
+                headers: {
+                    'Content-Type':
+                    'application/x-www-form-urlencoded'
+                },
+                body: formData.toString()
+            }
+        );
+
+        const result = await response.json();
+
+        if (!response.ok || !result.success) {
+            throw new Error(result.message || 'Saving failed.');
+        }
+
+        ctaButtonText.textContent =
+            '✓ Customization Saved!';
+
+        alert(
+            'Your coffee customization was saved successfully!\n\n' +
+            'Customization ID: ' + result.customizationId +
+            '\nTotal: ₹' + Number(result.totalPrice).toFixed(2)
+        );
+
+    } catch (error) {
+
+        alert('Error: ' + error.message);
+
+        ctaButtonText.textContent = originalText;
+
+    } finally {
+
+        saveButton.disabled = false;
+
+    }
+
+});
+
+          // Initial Render
+          renderCup();
+        })();
+      </script>
+    </div>
+  </main>
+<div id="shared-footer"></div>
+
+<script src="../js/include-layout.js"></script>
+</body>
+
+</html>

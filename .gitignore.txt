@@ -1,0 +1,14 @@
+
+# NetBeans private settings
+nbproject/private/
+nbproject/cache/
+
+# Generated files
+build/
+dist/
+*.class
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db

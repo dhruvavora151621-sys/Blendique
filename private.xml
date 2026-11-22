@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/Blendique/Blendique/Blendique/web/about-us/aboutus.html</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/web/about-us/screen.png</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/web/about-us/about.jsp</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/src/java/com/blendique/model/CafeLocation.java</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/src/java/com/blendique/servlet/AboutUsServlet.java</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/web/cart/code.html</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/src/java/com/blendique/CartItem.java</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/src/java/com/blendique/CartServlet.java</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/src/java/com/blendique/CheckoutServlet.java</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/web/cart/cart.jsp</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/src/java/com/blendique/customization.java</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/src/java/com/blendique/CustomizationDAO.java</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/src/java/com/blendique/CustomizationServlet.java</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/web/customization/Custom.html</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/web/footer.html</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/web/js/include-layout.js</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/web/HomePage/home.html</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/src/java/com/blendique/DBConnection.java</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/src/java/com/blendique/BeverageCRUD.java</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/src/java/com/blendique/TestAddBeverage.java</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/src/java/com/blendique/TestConnection.java</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/src/java/com/blendique/TestReadBeverage.java</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/web/HomePage/screen.png</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/web/header.html</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/web/HomePage/DESIGN.md</file>
+            <file>file:/D:/Blendique/Blendique/Blendique/web/menu/menu.html</file>
+        </group>
+    </open-files>
+</project-private>

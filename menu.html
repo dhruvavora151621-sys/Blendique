@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="web_standard" name="shell-type" />
+  <title>BLENDIQUE Coffee Co.</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <style>
+    @layer base {
+
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        overscroll-behavior: none;
+      }
+
+      main> :first-child {
+        margin-top: 0 !important;
+      }
+
+      main> :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script
+      <script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"outline-variant":"#d8c1bf","on-secondary-container":"#3d657e","secondary":"#3a637b","on-error-container":"#93000a","secondary-container":"#b9e2ff","on-background":"#1b1b1d","on-secondary":"#ffffff","surface-container-high":"#eae7ea","primary-container":"#71352f","on-surface":"#1b1b1d","on-tertiary-fixed":"#0d1d25","inverse-primary":"#ffb4ab","surface-bright":"#fcf8fb","surface-container-lowest":"#ffffff","on-primary-fixed":"#390b08","on-surface-variant":"#534341","on-error":"#ffffff","surface-container":"#f0edef","primary-fixed-dim":"#ffb4ab","error":"#ba1a1a","error-container":"#ffdad6","surface-dim":"#dcd9dc","surface":"#fcf8fb","on-tertiary-fixed-variant":"#394952","inverse-on-surface":"#f3f0f2","surface-tint":"#8d4c45","primary-fixed":"#ffdad6","on-primary":"#ffffff","outline":"#867370","on-secondary-fixed-variant":"#204b62","on-tertiary-container":"#a7b8c2","on-primary-container":"#f3a096","on-primary-fixed-variant":"#71352f","secondary-fixed-dim":"#a3cce8","tertiary-container":"#394952","on-tertiary":"#ffffff","tertiary-fixed":"#d4e5f0","tertiary-fixed-dim":"#b8c9d4","surface-container-highest":"#e4e2e4","background":"#fcf8fb","primary":"#551f1b","tertiary":"#23333b","surface-variant":"#e4e2e4","surface-container-low":"#f6f3f5","on-secondary-fixed":"#001e2d","inverse-surface":"#303032","secondary-fixed":"#c5e7ff"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"margin":"1.25rem","space-lg":"1.5rem","space-xl":"2.5rem","space-2xl":"4rem","gutter-desktop":"2rem","gutter":"1.5rem","margin-desktop":"3rem","space-sm":"0.5rem","space-xs":"0.25rem","space-md":"1rem"},"fontFamily":{"body-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"display":["Syne"],"body-lg":["Plus Jakarta Sans"],"label-sticker":["Syne"],"headline-sm":["Syne"],"display-mobile":["Syne"],"headline-lg-mobile":["Syne"],"label-lg":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-md":["Syne"],"headline-lg":["Syne"]},"fontSize":{"body-md":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"body-sm":["0.875rem",{"lineHeight":"1.35rem","fontWeight":"400"}],"display":["4.5rem",{"lineHeight":"4.75rem","letterSpacing":"-0.03em","fontWeight":"800"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"label-sticker":["0.75rem",{"lineHeight":"0.875rem","letterSpacing":"0.08em","fontWeight":"800"}],"headline-sm":["1.375rem",{"lineHeight":"1.75rem","fontWeight":"700"}],"display-mobile":["2.75rem",{"lineHeight":"3rem","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-lg-mobile":["2rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.04em","fontWeight":"700"}],"label-md":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.06em","fontWeight":"700"}],"headline-md":["2rem",{"lineHeight":"2.35rem","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-lg":["3rem",{"lineHeight":"3.25rem","letterSpacing":"-0.02em","fontWeight":"700"}]}}}};</script>
+</head>
+<body class="bg-background font-body-md text-body-md text-on-surface antialiased">
+    <div id="shared-header"></div>
+  <main class="w-full pt-20 bg-background">
+    <div class="flex flex-col w-full relative">
+      <!-- Editorial Top Banner & Ticker -->
+      <section class="w-full max-w-7xl mx-auto px-6 lg:px-12 pt-8 pb-10">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 pb-8">
+          <div class="flex flex-col max-w-2xl">
+            <div class="flex items-center gap-space-sm mb-3">
+              <span
+                class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm tracking-wider uppercase rotate-[-1.5deg] shadow-sm">
+                <span class="material-symbols-outlined text-[14px]">local_cafe</span> Season 04 Collection
+              </span>
+              <span class="font-label-md text-label-md text-on-surface-variant tracking-widest uppercase">Est. 2026 •
+                Daily Roast № 48</span>
+            </div>
+            <h1 class="font-display-lg text-display-lg text-primary tracking-tight uppercase leading-none">
+              Our Crafted Menu
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mt-4 max-w-xl">
+              Sourced from high-altitude estates, roasted in small batches, and paired with fresh bakery delights.
+              Crafted with passion, poured with obsession.
+            </p>
+          </div>
+          <!-- Quick Metrics Stamp Badge -->
+          <div class="flex items-center gap-4 self-start lg:self-end">
+            <div
+              class="relative bg-surface-container-lowest p-4 rounded-xl shadow-md flex items-center gap-4 rotate-[1.5deg]">
+              <div
+                class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm">
+                93
+              </div>
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Q-Grader Avg</span>
+                <span class="font-headline-sm text-headline-sm text-on-surface">Micro-Lot 100%</span>
+              </div>
+              <span class="material-symbols-outlined text-secondary text-2xl ml-2">verified</span>
+            </div>
+          </div>
+        </div>
+        <!-- Filter & Utility Navigation Block -->
+        <div class="w-full bg-surface-container-lowest p-4 lg:p-6 rounded-2xl shadow-sm flex flex-col gap-6">
+          <!-- Top Row: Category Tabs & Search -->
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <!-- Scrollable Category Tabs -->
+            <div class="flex items-center gap-2 overflow-x-auto pb-2 lg:pb-0 no-scrollbar">
+              <button
+                class="px-5 py-2.5 rounded-full font-label-lg text-label-lg transition-all bg-surface-container-high text-on-surface hover:bg-surface-container-highest whitespace-nowrap">
+                All Items
+              </button>
+              <button
+                class="px-5 py-2.5 rounded-full font-label-lg text-label-lg transition-all bg-primary text-on-primary shadow-md whitespace-nowrap">
+                Hot Coffee
+              </button>
+              <button
+                class="px-5 py-2.5 rounded-full font-label-lg text-label-lg transition-all bg-surface-container-high text-on-surface hover:bg-surface-container-highest whitespace-nowrap">
+                Cold Coffee
+              </button>
+              <button
+                class="px-5 py-2.5 rounded-full font-label-lg text-label-lg transition-all bg-surface-container-high text-on-surface hover:bg-surface-container-highest whitespace-nowrap">
+                Artisanal Tea &amp; Matchas
+              </button>
+              <button
+                class="px-5 py-2.5 rounded-full font-label-lg text-label-lg transition-all bg-surface-container-high text-on-surface hover:bg-surface-container-highest whitespace-nowrap">
+                Bakery &amp; Food
+              </button>
+            </div>
+            <!-- Quick Search Field -->
+            <div class="relative w-full lg:w-80 min-w-0">
+              <span
+                class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-xl pointer-events-none">search</span>
+              <input
+                class="w-full pl-10 pr-4 py-2.5 rounded-full bg-surface-container-low text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:shadow-md transition-all"
+                placeholder="Search your favourite brew or bite..." type="text" />
+            </div>
+          </div>
+          
+      <!-- Editorial Catalog Grid -->
+      <section class="w-full max-w-7xl mx-auto px-6 lg:px-12 pb-32">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 lg:gap-8">
+          <!-- Item 1: Classic Cortado -->
+          <article
+            class="group relative flex flex-col bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low mb-4">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="Ceramic glass cup with a perfectly poured espresso cortado showing layered textured silky milk and rich coffee crema, soft natural morning sunlight on marble tabletop, artisan coffee photography style in deep burgundy and warm cream tones"
+                src="../images/cappucino.jpeg" />
+              <span
+                class="absolute top-3 left-3 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider shadow-sm">
+                Balanced 1:1
+              </span>
+              <div
+                class="absolute bottom-3 right-3 bg-primary text-on-primary px-2.5 py-1 rounded-full font-headline-sm text-headline-sm leading-none">
+                ₹210
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <h2
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Classic Cortado
+                </h2>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4 flex-1">
+                Equal parts intense ristretto &amp; warm textured whole milk. Intense, aromatic, and velvety.
+              </p>
+              <div class="flex items-center gap-1.5 flex-wrap mb-4">
+                <span
+                  class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Double
+                  Shot</span>
+                <span
+                  class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Whole
+                  Milk</span>
+              </div>
+              <div class="flex items-center gap-2 pt-2 border-t border-surface-container-low">
+                <button
+                  class="px-3 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors"
+                  onclick="openCustomizeModal('Classic Cortado', 210)" title="Customize brew profile">
+                  <span class="material-symbols-outlined text-[16px]">tune</span>
+                  <span>Customize</span>
+                </button>
+                <button
+                  class="flex-1 px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1 transition-all shadow-sm"
+                  onclick="addToCart('Classic Cortado', 210)">
+                  <span class="material-symbols-outlined text-[16px]">add</span>
+                  <span>Add</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Item 2: Signature Hazelnut Flat White -->
+          <article
+            class="group relative flex flex-col bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low mb-4">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="Artisanal flat white in a deep burgundy stoneware cup with intricate rosetta latte art dusted with finely crushed roasted hazelnut praline, styled on a wooden atelier bench with soft ambient warm spotlight"
+                src="../images/latte.jpeg" />
+              <span
+                class="absolute top-3 left-3 bg-secondary text-on-secondary px-2.5 py-1 rounded-full font-label-sm text-label-sm uppercase font-bold tracking-wider shadow-sm">
+                House Favorite
+              </span>
+              <div
+                class="absolute bottom-3 right-3 bg-primary text-on-primary px-2.5 py-1 rounded-full font-headline-sm text-headline-sm leading-none">
+                ₹270
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <h2
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Signature Hazelnut Flat White
+                </h2>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4 flex-1">
+                Velvety microfoam, roasted hazelnut praline syrup, double espresso pulled fresh.
+              </p>
+              <div class="flex items-center gap-1.5 flex-wrap mb-4">
+                <span
+                  class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm">Nutty
+                  &amp; Sweet</span>
+                <span
+                  class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Hot</span>
+              </div>
+              <div class="flex items-center gap-2 pt-2 border-t border-surface-container-low">
+                <button
+                  class="px-3 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors"
+                  onclick="openCustomizeModal('Signature Hazelnut Flat White', 270)">
+                  <span class="material-symbols-outlined text-[16px]">tune</span>
+                  <span>Customize</span>
+                </button>
+                <button
+                  class="flex-1 px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1 transition-all shadow-sm"
+                  onclick="addToCart('Signature Hazelnut Flat White', 270)">
+                  <span class="material-symbols-outlined text-[16px]">add</span>
+                  <span>Add</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Item 3: Espresso Tonic with Grapefruit -->
+          <article
+            class="group relative flex flex-col bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low mb-4">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="Tall crystal glass filled with effervescent sparkling tonic water, crystal ice cubes, floating dehydration pink grapefruit wheel, topped with floating dark espresso layer, daylight sparkling refraction, clean chic cafe aesthetic"
+                src="../images/coldbrew.jpeg" />
+              <span
+                class="absolute top-3 left-3 bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-1 rounded-full font-label-sm text-label-sm uppercase font-bold tracking-wider shadow-sm">
+                Sparkling
+              </span>
+              <div
+                class="absolute bottom-3 right-3 bg-primary text-on-primary px-2.5 py-1 rounded-full font-headline-sm text-headline-sm leading-none">
+                ₹260
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <h2
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Espresso Tonic &amp; Grapefruit
+                </h2>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4 flex-1">
+                Crisp premium tonic water, fresh pink grapefruit slice, topped with a bold cold brew concentrate shot.
+              </p>
+              <div class="flex items-center gap-1.5 flex-wrap mb-4">
+                <span
+                  class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Citrus
+                  Zing</span>
+                <span
+                  class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Refreshing</span>
+              </div>
+              <div class="flex items-center gap-2 pt-2 border-t border-surface-container-low">
+                <button
+                  class="px-3 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors"
+                  onclick="openCustomizeModal('Espresso Tonic &amp; Grapefruit', 260)">
+                  <span class="material-symbols-outlined text-[16px]">tune</span>
+                  <span>Customize</span>
+                </button>
+                <button
+                  class="flex-1 px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1 transition-all shadow-sm"
+                  onclick="addToCart('Espresso Tonic &amp; Grapefruit', 260)">
+                  <span class="material-symbols-outlined text-[16px]">add</span>
+                  <span>Add</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Item 4: Iced Kyoto Style Drip -->
+          <article
+            class="group relative flex flex-col bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low mb-4">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="Cold brew coffee in a heavy fluted glass with a single oversized crystal clear ice sphere, Kyoto slow drip glass tower apparatus blurred softly in the architectural studio background, muted tones of charcoal and bronze"
+                src="../images/kyoto.jpeg" />
+              <span
+                class="absolute top-3 left-3 bg-primary-container text-on-primary px-2.5 py-1 rounded-full font-label-sm text-label-sm uppercase font-bold tracking-wider shadow-sm">
+                12H Slow Drip
+              </span>
+              <div
+                class="absolute bottom-3 right-3 bg-primary text-on-primary px-2.5 py-1 rounded-full font-headline-sm text-headline-sm leading-none">
+                ₹290
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <h2
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Iced Kyoto Style Drip
+                </h2>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4 flex-1">
+                Slow 12-hour single-drop extraction method yielding deep dark chocolate, cherry &amp; port wine notes.
+              </p>
+              <div class="flex items-center gap-1.5 flex-wrap mb-4">
+                <span
+                  class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Low
+                  Acidity</span>
+                <span
+                  class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm">High
+                  Caffeine</span>
+              </div>
+              <div class="flex items-center gap-2 pt-2 border-t border-surface-container-low">
+                <button
+                  class="px-3 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors"
+                  onclick="openCustomizeModal('Iced Kyoto Style Drip', 290)">
+                  <span class="material-symbols-outlined text-[16px]">tune</span>
+                  <span>Customize</span>
+                </button>
+                <button
+                  class="flex-1 px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1 transition-all shadow-sm"
+                  onclick="addToCart('Iced Kyoto Style Drip', 290)">
+                  <span class="material-symbols-outlined text-[16px]">add</span>
+                  <span>Add</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Item 5: Ceremonial Uji Matcha Latte -->
+          <article
+            class="group relative flex flex-col bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low mb-4">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="Vibrant vivid green ceremonial matcha latte in a ribbed glass cup with layered steamed oat milk, bamboo chasen whisk resting on linen napkin beside it, serene Japanese minimalist tea ceremony setting"
+                src="../images/matcha.jpeg" />
+              <span
+                class="absolute top-3 left-3 bg-secondary-container text-on-secondary-fixed px-2.5 py-1 rounded-full font-label-sm text-label-sm uppercase font-bold tracking-wider shadow-sm">
+                Kyoto Harvest
+              </span>
+              <div
+                class="absolute bottom-3 right-3 bg-primary text-on-primary px-2.5 py-1 rounded-full font-headline-sm text-headline-sm leading-none">
+                ₹310
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <h2
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Ceremonial Uji Matcha Latte
+                </h2>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4 flex-1">
+                First-harvest Japanese matcha powder stoneground in Uji, whisked gently with creamy oat milk &amp;
+                wildflower honey.
+              </p>
+              <div class="flex items-center gap-1.5 flex-wrap mb-4">
+                <span
+                  class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Antioxidant</span>
+                <span
+                  class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Oat
+                  Milk Incl.</span>
+              </div>
+              <div class="flex items-center gap-2 pt-2 border-t border-surface-container-low">
+                <button
+                  class="px-3 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors"
+                  onclick="openCustomizeModal('Ceremonial Uji Matcha Latte', 310)">
+                  <span class="material-symbols-outlined text-[16px]">tune</span>
+                  <span>Customize</span>
+                </button>
+                <button
+                  class="flex-1 px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1 transition-all shadow-sm"
+                  onclick="addToCart('Ceremonial Uji Matcha Latte', 310)">
+                  <span class="material-symbols-outlined text-[16px]">add</span>
+                  <span>Add</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Item 6: Salted Caramel Cold Foam Brew -->
+          <article
+            class="group relative flex flex-col bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low mb-4">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="Iced cold brew in a modern glassware tumbler with cascading thick sweet cream cold foam and golden sea salt caramel drizzles running along the inner glass walls, gourmet editorial dessert beverage photo"
+                src="../images/cinnamon.jpeg" />
+              <span
+                class="absolute top-3 left-3 bg-surface/90 backdrop-blur-md px-2.5 py-1 rounded-full font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider shadow-sm">
+                Decadent
+              </span>
+              <div
+                class="absolute bottom-3 right-3 bg-primary text-on-primary px-2.5 py-1 rounded-full font-headline-sm text-headline-sm leading-none">
+                ₹280
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <h2
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Salted Caramel Cold Foam Brew
+                </h2>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4 flex-1">
+                Smooth 16-hour cold brew topped with aerated fleur de sel caramel sweet cream that gently cascades.
+              </p>
+              <div class="flex items-center gap-1.5 flex-wrap mb-4">
+                <span
+                  class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Cold
+                  Foam</span>
+                <span
+                  class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Sea
+                  Salt</span>
+              </div>
+              <div class="flex items-center gap-2 pt-2 border-t border-surface-container-low">
+                <button
+                  class="px-3 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors"
+                  onclick="openCustomizeModal('Salted Caramel Cold Foam Brew', 280)">
+                  <span class="material-symbols-outlined text-[16px]">tune</span>
+                  <span>Customize</span>
+                </button>
+                <button
+                  class="flex-1 px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1 transition-all shadow-sm"
+                  onclick="addToCart('Salted Caramel Cold Foam Brew', 280)">
+                  <span class="material-symbols-outlined text-[16px]">add</span>
+                  <span>Add</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Item 7: Almond Frangipane Croissant -->
+          <article
+            class="group relative flex flex-col bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low mb-4">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="Golden crisp freshly baked French croissant layered with toasted flaked almonds and dusted with powdered icing sugar, served on a vintage ceramic plate in a warm Copenhagen bakery kitchen"
+                src="../images/croissant.jpeg" />
+              <span
+                class="absolute top-3 left-3 bg-secondary-container text-on-secondary-fixed px-2.5 py-1 rounded-full font-label-sm text-label-sm uppercase font-bold tracking-wider shadow-sm">
+                Baked Fresh 6 AM
+              </span>
+              <div
+                class="absolute bottom-3 right-3 bg-primary text-on-primary px-2.5 py-1 rounded-full font-headline-sm text-headline-sm leading-none">
+                ₹220
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <h2
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Almond Frangipane Croissant
+                </h2>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4 flex-1">
+                Twice-baked flaky French butter croissant filled with rich almond frangipane cream and topped with
+                toasted slivers.
+              </p>
+              <div class="flex items-center gap-1.5 flex-wrap mb-4">
+                <span
+                  class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Pure
+                  Butter</span>
+                <span
+                  class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Artisan
+                  Viennoiserie</span>
+              </div>
+              <div class="flex items-center gap-2 pt-2 border-t border-surface-container-low">
+                <button
+                  class="px-3 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors"
+                  onclick="openCustomizeModal('Almond Frangipane Croissant', 220)">
+                  <span class="material-symbols-outlined text-[16px]">tune</span>
+                  <span>Warm Up</span>
+                </button>
+                <button
+                  class="flex-1 px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1 transition-all shadow-sm"
+                  onclick="addToCart('Almond Frangipane Croissant', 220)">
+                  <span class="material-symbols-outlined text-[16px]">add</span>
+                  <span>Add</span>
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Item 8: Sourdough Avocado & Poached Egg Toast -->
+          <article
+            class="group relative flex flex-col bg-surface-container-lowest rounded-2xl p-4 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-low mb-4">
+              <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                data-alt="Thick slice of toasted rustic sourdough loaf topped with chunky mashed avocado, soft poached egg with runny golden yolk, chili flakes, Danish feta crumbles, and micro greens on artisanal pottery plate"
+                src="../images/sourdough.jpeg" />
+              <span
+                class="absolute top-3 left-3 bg-tertiary-fixed text-on-tertiary-fixed px-2.5 py-1 rounded-full font-label-sm text-label-sm uppercase font-bold tracking-wider shadow-sm">
+                Brunch Classic
+              </span>
+              <div
+                class="absolute bottom-3 right-3 bg-primary text-on-primary px-2.5 py-1 rounded-full font-headline-sm text-headline-sm leading-none">
+                ₹340
+              </div>
+            </div>
+            <div class="flex flex-col flex-1">
+              <div class="flex items-start justify-between gap-2 mb-1.5">
+                <h2
+                  class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">
+                  Sourdough Avocado &amp; Egg
+                </h2>
+              </div>
+              <p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-4 flex-1">
+                Naturally leavened country sourdough, chunky Hass avocado, organic poached egg, Aleppo chili &amp; sheep
+                feta.
+              </p>
+              <div class="flex items-center gap-1.5 flex-wrap mb-4">
+                <span
+                  class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm">High
+                  Protein</span>
+                <span
+                  class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Organic
+                  Farm Eggs</span>
+              </div>
+              <div class="flex items-center gap-2 pt-2 border-t border-surface-container-low">
+                <button
+                  class="px-3 py-2 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 transition-colors"
+                  onclick="openCustomizeModal('Sourdough Avocado &amp; Egg', 340)">
+                  <span class="material-symbols-outlined text-[16px]">tune</span>
+                  <span>Sides</span>
+                </button>
+                <button
+                  class="flex-1 px-4 py-2 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1 transition-all shadow-sm"
+                  onclick="addToCart('Sourdough Avocado &amp; Egg', 340)">
+                  <span class="material-symbols-outlined text-[16px]">add</span>
+                  <span>Add</span>
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      
+      <!-- Floating Sticky Order Preview Bar -->
+      <aside
+        class="fixed bottom-6 left-1/2 -translate-x-1/2 z-40 w-11/12 max-w-2xl bg-surface-container-lowest/95 backdrop-blur-xl p-3 sm:p-4 rounded-full shadow-[0_16px_36px_-6px_rgba(113,53,47,0.18),0_4px_12px_-2px_rgba(23,23,25,0.06)] flex items-center justify-between transition-all duration-300"
+        id="order-preview-bar">
+        <div class="flex items-center gap-3 sm:gap-4 pl-2">
+          <div
+            class="relative w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm">
+            <span class="material-symbols-outlined text-xl">shopping_bag</span>
+            <span
+              class="absolute -top-1 -right-1 bg-secondary-container text-on-secondary-fixed text-[11px] font-bold rounded-full w-5 h-5 flex items-center justify-center shadow-xs"
+              id="cart-count-badge">2</span>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-2">
+              <span class="font-headline-sm text-headline-sm text-on-surface leading-none"
+                id="cart-total-price">₹480</span>
+              <span class="font-label-sm text-label-sm text-outline">• 2 Items</span>
+            </div>
+            <span class="font-body-sm text-body-sm text-on-surface-variant hidden sm:inline">Hazelnut Flat White, Almond
+              Croissant</span>
+          </div>
+        </div>
+        <div class="flex items-center gap-2 pr-1">
+          <button
+            class="px-4 py-2 sm:px-6 sm:py-2.5 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold flex items-center gap-2 transition-all shadow-md">
+            <span>Review Order</span>
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </button>
+        </div>
+      </aside>
+      <!-- Customization Popover / Modal Overlay -->
+      <div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden items-center justify-center p-4"
+        id="customize-modal">
+        <div
+          class="bg-surface-container-lowest w-full max-w-lg rounded-3xl p-6 sm:p-8 shadow-2xl relative animate-in fade-in zoom-in duration-200">
+          <button
+            class="absolute top-5 right-5 text-outline hover:text-on-surface transition-colors p-1 rounded-full hover:bg-surface-container"
+            onclick="closeCustomizeModal()">
+            <span class="material-symbols-outlined">close</span>
+          </button>
+          <div class="flex items-center gap-2 mb-1">
+            <span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Dial-In
+              Extraction</span>
+          </div>
+          <h3 class="font-headline-md text-headline-md text-on-surface mb-4" id="modal-item-title">
+            Customize Item
+          </h3>
+          <div class="flex flex-col gap-6">
+            <!-- Milk Choice -->
+            <div>
+              <label class="block font-label-md text-label-md text-on-surface font-semibold mb-2">Choice of Milk /
+                Base</label>
+              <div class="grid grid-cols-3 gap-2">
+                <button class="px-3 py-2 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm text-center"
+                  type="button">Whole Milk</button>
+                <button
+                  class="px-3 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm text-center"
+                  type="button">Oat Milk (+₹40)</button>
+                <button
+                  class="px-3 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm text-center"
+                  type="button">Almond (+₹40)</button>
+              </div>
+            </div>
+            <!-- Sweetness / Syrup Level -->
+            <div>
+              <label class="block font-label-md text-label-md text-on-surface font-semibold mb-2">Sweetness
+                Profile</label>
+              <div class="flex items-center justify-between gap-2 bg-surface-container-low p-1.5 rounded-full">
+                <button
+                  class="flex-1 py-1.5 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-on-surface shadow-xs"
+                  type="button">Unsweetened</button>
+                <button
+                  class="flex-1 py-1.5 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface"
+                  type="button">50% Mild</button>
+                <button
+                  class="flex-1 py-1.5 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface"
+                  type="button">Standard</button>
+              </div>
+            </div>
+            <!-- Extra Shots -->
+            <div>
+              <label class="block font-label-md text-label-md text-on-surface font-semibold mb-2">Espresso
+                Concentration</label>
+              <div class="flex items-center gap-3">
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input checked="" class="accent-primary w-4 h-4" name="shots" type="radio" />
+                  <span class="font-body-md text-body-md text-on-surface">Standard Double Shot</span>
+                </label>
+                <label class="flex items-center gap-2 cursor-pointer ml-4">
+                  <input class="accent-primary w-4 h-4" name="shots" type="radio" />
+                  <span class="font-body-md text-body-md text-on-surface">Triple Shot (+₹50)</span>
+                </label>
+              </div>
+            </div>
+            <!-- Actions -->
+            <div class="pt-4 flex items-center justify-between border-t border-surface-container-low mt-2">
+              <div class="flex flex-col">
+                <span class="font-label-sm text-label-sm text-outline uppercase">Total Item Price</span>
+                <span class="font-headline-sm text-headline-sm text-primary" id="modal-item-price">₹270</span>
+              </div>
+              <button
+                class="px-6 py-2.5 rounded-full bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold transition-all shadow-md"
+                onclick="confirmCustomization()">
+                Add to Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Interactive Logic -->
+      <script>
+        let currentCartCount = 2;
+        let currentCartTotal = 480;
+
+        function addToCart(title, price) {
+          currentCartCount += 1;
+          currentCartTotal += price;
+          updateCartDisplay();
+
+          // Simple pulse effect on floating preview
+          const preview = document.getElementById('order-preview-bar');
+          preview.classList.add('scale-105');
+          setTimeout(() => preview.classList.remove('scale-105'), 200);
+        }
+
+        function updateCartDisplay() {
+          document.getElementById('cart-count-badge').innerText = currentCartCount;
+          document.getElementById('cart-total-price').innerText = '₹' + currentCartTotal;
+        }
+
+        function openCustomizeModal(name, price) {
+          document.getElementById('modal-item-title').innerText = name;
+          document.getElementById('modal-item-price').innerText = '₹' + price;
+          const modal = document.getElementById('customize-modal');
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        }
+
+        function closeCustomizeModal() {
+          const modal = document.getElementById('customize-modal');
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+
+        function confirmCustomization() {
+          const priceText = document.getElementById('modal-item-price').innerText.replace('₹', '');
+          const price = parseInt(priceText, 10) || 250;
+          const title = document.getElementById('modal-item-title').innerText;
+          addToCart(title, price);
+          closeCustomizeModal();
+        }
+      </script>
+    </div>
+  </main>
+    <div id="shared-footer"></div>
+
+<script src="../js/include-layout.js"></script>
+ </body></html>
